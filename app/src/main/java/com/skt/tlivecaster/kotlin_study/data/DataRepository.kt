@@ -1,10 +1,11 @@
-package com.task.data
+package com.skt.tlivecaster.kotlin_study.data
 
-import com.task.data.dto.login.LoginRequest
-import com.task.data.dto.login.LoginResponse
+import com.skt.tlivecaster.kotlin_study.data.dto.login.LoginRequest
+import com.skt.tlivecaster.kotlin_study.data.dto.login.LoginResponse
 import com.task.data.dto.recipes.Recipes
 import com.task.data.local.LocalData
-import com.task.data.remote.RemoteData
+import com.skt.tlivecaster.kotlin_study.data.remote.RemoteData
+import com.task.data.DataRepositorySource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
@@ -16,7 +17,8 @@ import kotlin.coroutines.CoroutineContext
  * Created by AhmedEltaher
  */
 
-class DataRepository @Inject constructor(private val remoteRepository: RemoteData, private val localRepository: LocalData, private val ioDispatcher: CoroutineContext) : DataRepositorySource {
+class DataRepository @Inject constructor(private val remoteRepository: RemoteData, private val localRepository: LocalData, private val ioDispatcher: CoroutineContext) :
+    DataRepositorySource {
 
     override suspend fun requestRecipes(): Flow<Resource<Recipes>> {
         return flow {

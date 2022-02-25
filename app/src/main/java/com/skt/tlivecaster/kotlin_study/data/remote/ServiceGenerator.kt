@@ -1,10 +1,10 @@
-package com.task.data.remote
+package com.skt.tlivecaster.kotlin_study.data.remote
 
-import com.task.data.remote.moshiFactories.MyKotlinJsonAdapterFactory
+import com.skt.tlivecaster.kotlin_study.BASE_URL
+import com.skt.tlivecaster.kotlin_study.BuildConfig
+import com.skt.tlivecaster.kotlin_study.data.remote.moshiFactories.MyStandardJsonAdapters
 import com.squareup.moshi.Moshi
-import com.task.BuildConfig
-import com.task.data.remote.moshiFactories.MyStandardJsonAdapters
-import com.task.BASE_URL
+import com.skt.tlivecaster.kotlin_study.data.remote.moshiFactories.MyKotlinJsonAdapterFactory
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

@@ -1,12 +1,14 @@
-package com.task.data.error.mapper
+package com.skt.tlivecaster.kotlin_study.data.error.mapper
 
 import android.content.Context
-import com.task.R
-import com.task.data.error.*
+import com.skt.tlivecaster.kotlin_study.R
+import com.skt.tlivecaster.kotlin_study.data.error.*
+import com.task.data.error.mapper.ErrorMapperSource
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
-class ErrorMapper @Inject constructor(@ApplicationContext val context: Context) : ErrorMapperSource {
+class ErrorMapper @Inject constructor(@ApplicationContext val context: Context) :
+    ErrorMapperSource {
 
     override fun getErrorString(errorId: Int): String {
         return context.getString(errorId)

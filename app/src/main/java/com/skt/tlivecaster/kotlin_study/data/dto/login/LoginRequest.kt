@@ -1,4 +1,4 @@
-package com.task.data.dto.login
+package com.skt.tlivecaster.kotlin_study.data.dto.login
 
 /**
  * Created by AhmedEltaher

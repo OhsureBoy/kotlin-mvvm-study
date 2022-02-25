@@ -1,6 +1,6 @@
-package com.task.usecase.errors
+package com.skt.tlivecaster.kotlin_study.usecase.errors
 
-import com.task.data.error.Error
+import com.skt.tlivecaster.kotlin_study.data.error.Error
 
 interface ErrorUseCase {
     fun getError(errorCode: Int): Error

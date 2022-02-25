@@ -1,8 +1,7 @@
 package com.skt.tlivecaster.kotlin_study.usecase.errors
 
-import com.task.data.error.Error
-import com.task.data.error.mapper.ErrorMapper
-import com.task.usecase.errors.ErrorUseCase
+import com.skt.tlivecaster.kotlin_study.data.error.Error
+import com.skt.tlivecaster.kotlin_study.data.error.mapper.ErrorMapper
 import javax.inject.Inject
 
 /**

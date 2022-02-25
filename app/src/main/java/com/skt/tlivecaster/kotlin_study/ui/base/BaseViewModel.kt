@@ -1,7 +1,7 @@
 package com.skt.tlivecaster.kotlin_study.ui.base
 
 import androidx.lifecycle.ViewModel
-import java.util.logging.ErrorManager
+import com.skt.tlivecaster.kotlin_study.usecase.errors.ErrorManager
 import javax.inject.Inject
 
 abstract class BaseViewModel : ViewModel() {

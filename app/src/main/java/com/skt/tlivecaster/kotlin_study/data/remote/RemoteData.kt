@@ -1,12 +1,12 @@
-package com.task.data.remote
+package com.skt.tlivecaster.kotlin_study.data.remote
 
-import com.task.data.Resource
+import com.skt.tlivecaster.kotlin_study.data.Resource
+import com.skt.tlivecaster.kotlin_study.data.remote.service.RecipesService
+import com.skt.tlivecaster.kotlin_study.utils.NetworkConnectivity
 import com.task.data.dto.recipes.Recipes
 import com.task.data.dto.recipes.RecipesItem
-import com.task.data.error.NETWORK_ERROR
-import com.task.data.error.NO_INTERNET_CONNECTION
-import com.task.data.remote.service.RecipesService
-import com.task.utils.NetworkConnectivity
+import com.skt.tlivecaster.kotlin_study.data.error.NETWORK_ERROR
+import com.skt.tlivecaster.kotlin_study.data.error.NO_INTERNET_CONNECTION
 import retrofit2.Response
 import java.io.IOException
 import javax.inject.Inject
@@ -17,7 +17,8 @@ import javax.inject.Inject
  */
 
 class RemoteData @Inject
-constructor(private val serviceGenerator: ServiceGenerator, private val networkConnectivity: NetworkConnectivity) : RemoteDataSource {
+constructor(private val serviceGenerator: ServiceGenerator, private val networkConnectivity: NetworkConnectivity) :
+    RemoteDataSource {
     override suspend fun requestRecipes(): Resource<Recipes> {
         val recipesService = serviceGenerator.createService(RecipesService::class.java)
         return when (val response = processCall(recipesService::fetchRecipes)) {

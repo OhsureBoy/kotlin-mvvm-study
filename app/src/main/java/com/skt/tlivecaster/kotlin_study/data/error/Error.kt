@@ -1,4 +1,4 @@
-package com.task.data.error
+package com.skt.tlivecaster.kotlin_study.data.error
 
 /**
  * Created by AhmedEltaher

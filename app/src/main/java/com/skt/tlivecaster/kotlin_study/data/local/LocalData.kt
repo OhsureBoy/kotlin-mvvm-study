@@ -2,12 +2,12 @@ package com.task.data.local
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.task.FAVOURITES_KEY
-import com.task.SHARED_PREFERENCES_FILE_NAME
-import com.task.data.Resource
-import com.task.data.dto.login.LoginRequest
-import com.task.data.dto.login.LoginResponse
-import com.task.data.error.PASS_WORD_ERROR
+import com.skt.tlivecaster.kotlin_study.FAVOURITES_KEY
+import com.skt.tlivecaster.kotlin_study.SHARED_PREFERENCES_FILE_NAME
+import com.skt.tlivecaster.kotlin_study.data.Resource
+import com.skt.tlivecaster.kotlin_study.data.dto.login.LoginRequest
+import com.skt.tlivecaster.kotlin_study.data.dto.login.LoginResponse
+import com.skt.tlivecaster.kotlin_study.data.error.PASS_WORD_ERROR
 import javax.inject.Inject
 
 /**
@@ -18,9 +18,11 @@ class LocalData @Inject constructor(val context: Context) {
 
     fun doLogin(loginRequest: LoginRequest): Resource<LoginResponse> {
         if (loginRequest == LoginRequest("ahmed@ahmed.ahmed", "ahmed")) {
-            return Resource.Success(LoginResponse("123", "Ahmed", "Mahmoud",
+            return Resource.Success(
+                LoginResponse("123", "Ahmed", "Mahmoud",
                     "FrunkfurterAlle", "77", "12000", "Berlin",
-                    "Germany", "ahmed@ahmed.ahmed"))
+                    "Germany", "ahmed@ahmed.ahmed")
+            )
         }
         return Resource.DataError(PASS_WORD_ERROR)
     }

@@ -1,6 +1,6 @@
-package com.task.data.remote
+package com.skt.tlivecaster.kotlin_study.data.remote
 
-import com.task.data.Resource
+import com.skt.tlivecaster.kotlin_study.data.Resource
 import com.task.data.dto.recipes.Recipes
 
 /**

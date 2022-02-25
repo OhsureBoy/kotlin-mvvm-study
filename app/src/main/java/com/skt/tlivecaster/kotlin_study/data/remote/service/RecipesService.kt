@@ -1,4 +1,4 @@
-package com.task.data.remote.service
+package com.skt.tlivecaster.kotlin_study.data.remote.service
 
 import com.task.data.dto.recipes.RecipesItem
 import retrofit2.Response

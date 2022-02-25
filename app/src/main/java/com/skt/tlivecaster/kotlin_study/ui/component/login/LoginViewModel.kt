@@ -8,15 +8,14 @@ import com.skt.tlivecaster.kotlin_study.RegexUtils.isValidEmail
 import com.skt.tlivecaster.kotlin_study.ui.base.BaseViewModel
 import com.skt.tlivecaster.kotlin_study.utils.SingleEvent
 import com.skt.tlivecaster.kotlin_study.wrapEspressoIdlingResource
-import com.task.data.DataRepository
-import com.task.data.Resource
-import com.task.data.dto.login.LoginRequest
-import com.task.data.dto.login.LoginResponse
-import com.task.data.error.CHECK_YOUR_FIELDS
-import com.task.data.error.PASS_WORD_ERROR
-import com.task.data.error.USER_NAME_ERROR
+import com.skt.tlivecaster.kotlin_study.data.DataRepository
+import com.skt.tlivecaster.kotlin_study.data.Resource
+import com.skt.tlivecaster.kotlin_study.data.dto.login.LoginRequest
+import com.skt.tlivecaster.kotlin_study.data.dto.login.LoginResponse
+import com.skt.tlivecaster.kotlin_study.data.error.CHECK_YOUR_FIELDS
+import com.skt.tlivecaster.kotlin_study.data.error.PASS_WORD_ERROR
+import com.skt.tlivecaster.kotlin_study.data.error.USER_NAME_ERROR
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -61,7 +60,7 @@ class LoginViewModel @Inject constructor(private val dataRepository: DataReposit
     }
 
     fun showToastMessage(errorCode: Int) {
-        val error = errorManager.getError(errorCode)
+        val error = errorManager.getError(errorCode);
         showToastPrivate.value = SingleEvent(error.description)
     }
 }

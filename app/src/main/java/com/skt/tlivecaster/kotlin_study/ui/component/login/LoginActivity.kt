@@ -7,9 +7,10 @@ import androidx.lifecycle.LiveData
 import com.google.android.material.snackbar.Snackbar
 import com.skt.tlivecaster.kotlin_study.databinding.ActivityLoginBinding
 import com.skt.tlivecaster.kotlin_study.ui.base.BaseActivity
-import com.skt.tlivecaster.kotlin_study.utils.SingleEvent
-import com.task.data.Resource
-import com.task.data.dto.login.LoginResponse
+import com.skt.tlivecaster.kotlin_study.utils.*
+import com.skt.tlivecaster.kotlin_study.data.Resource
+import com.skt.tlivecaster.kotlin_study.data.dto.login.LoginResponse
+import com.skt.tlivecaster.kotlin_study.ui.component.recipes.RecipesListActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
