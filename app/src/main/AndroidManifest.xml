@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_study">
-        <activity android:name=".login.LoginActivity">
+        <activity android:name="com.skt.tlivecaster.kotlin_study.ui.component.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
