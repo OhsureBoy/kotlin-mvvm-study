@@ -1,7 +1,6 @@
 package com.skt.tlivecaster.kotlin_study.ui.component.recipes
 
 import android.app.SearchManager
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -24,8 +23,8 @@ import com.skt.tlivecaster.kotlin_study.ui.component.details.DetailsActivity
 
 import com.skt.tlivecaster.kotlin_study.ui.component.recipes.adapter.RecipesAdapter
 import com.skt.tlivecaster.kotlin_study.utils.*
-import com.task.data.dto.recipes.Recipes
-import com.task.data.dto.recipes.RecipesItem
+import com.skt.tlivecaster.kotlin_study.data.dto.recipes.Recipes
+import com.skt.tlivecaster.kotlin_study.data.dto.recipes.RecipesItem
 
 import dagger.hilt.android.AndroidEntryPoint
 

@@ -14,7 +14,7 @@ import com.skt.tlivecaster.kotlin_study.utils.observe
 import com.skt.tlivecaster.kotlin_study.utils.toGone
 import com.skt.tlivecaster.kotlin_study.utils.toVisible
 import com.squareup.picasso.Picasso
-import com.task.data.dto.recipes.RecipesItem
+import com.skt.tlivecaster.kotlin_study.data.dto.recipes.RecipesItem
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -4,7 +4,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.skt.tlivecaster.kotlin_study.R
 import com.skt.tlivecaster.kotlin_study.databinding.RecipeItemBinding
 import com.squareup.picasso.Picasso
-import com.task.data.dto.recipes.RecipesItem
+import com.skt.tlivecaster.kotlin_study.data.dto.recipes.RecipesItem
 import com.task.ui.base.listeners.RecyclerItemListener
 
 /**

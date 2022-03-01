@@ -12,13 +12,13 @@ android {
     compileSdkVersion rootProject.compileSdkVersion
     buildToolsVersion rootProject.buildToolsVersion
     defaultConfig {
-        applicationId 'com.eltaher.task'
+        applicationId 'com.skt.tlivecaster.kotlin_study'
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
-        testInstrumentationRunner "com.task.CustomTestRunner"
+        testInstrumentationRunner "com.skt.tlivecaster.kotlin_study.CustomTestRunner"
     }
     buildFeatures {
         viewBinding = true

@@ -1,6 +1,6 @@
 package com.skt.tlivecaster.kotlin_study.data.remote.service
 
-import com.task.data.dto.recipes.RecipesItem
+import com.skt.tlivecaster.kotlin_study.data.dto.recipes.RecipesItem
 import retrofit2.Response
 import retrofit2.http.GET
 

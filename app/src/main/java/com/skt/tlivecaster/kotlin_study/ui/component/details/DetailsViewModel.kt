@@ -7,8 +7,8 @@ import androidx.lifecycle.viewModelScope
 import com.skt.tlivecaster.kotlin_study.data.Resource
 import com.skt.tlivecaster.kotlin_study.ui.base.BaseViewModel
 import com.skt.tlivecaster.kotlin_study.wrapEspressoIdlingResource
-import com.task.data.DataRepositorySource
-import com.task.data.dto.recipes.RecipesItem
+import com.skt.tlivecaster.kotlin_study.data.DataRepositorySource
+import com.skt.tlivecaster.kotlin_study.data.dto.recipes.RecipesItem
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

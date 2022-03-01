@@ -1,4 +1,4 @@
-package com.task.data.error.mapper
+package com.skt.tlivecaster.kotlin_study.data.error.mapper
 
 interface ErrorMapperSource {
     fun getErrorString(errorId: Int): String

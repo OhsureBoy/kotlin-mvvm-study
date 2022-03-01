@@ -1,7 +1,7 @@
-package com.task.data
+package com.skt.tlivecaster.kotlin_study.data
 
 import com.skt.tlivecaster.kotlin_study.data.Resource
-import com.task.data.dto.recipes.Recipes
+import com.skt.tlivecaster.kotlin_study.data.dto.recipes.Recipes
 import com.skt.tlivecaster.kotlin_study.data.dto.login.LoginRequest
 import com.skt.tlivecaster.kotlin_study.data.dto.login.LoginResponse
 import kotlinx.coroutines.flow.Flow

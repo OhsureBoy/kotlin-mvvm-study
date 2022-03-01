@@ -3,8 +3,8 @@ package com.skt.tlivecaster.kotlin_study.data.remote
 import com.skt.tlivecaster.kotlin_study.data.Resource
 import com.skt.tlivecaster.kotlin_study.data.remote.service.RecipesService
 import com.skt.tlivecaster.kotlin_study.utils.NetworkConnectivity
-import com.task.data.dto.recipes.Recipes
-import com.task.data.dto.recipes.RecipesItem
+import com.skt.tlivecaster.kotlin_study.data.dto.recipes.Recipes
+import com.skt.tlivecaster.kotlin_study.data.dto.recipes.RecipesItem
 import com.skt.tlivecaster.kotlin_study.data.error.NETWORK_ERROR
 import com.skt.tlivecaster.kotlin_study.data.error.NO_INTERNET_CONNECTION
 import retrofit2.Response

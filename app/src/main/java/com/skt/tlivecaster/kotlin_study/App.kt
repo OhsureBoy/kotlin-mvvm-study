@@ -1,16 +1,7 @@
 package com.skt.tlivecaster.kotlin_study
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-class App : Application() {
-
-    override fun onCreate() {
-        super.onCreate()
-        instance = this
-    }
-
-    companion object {
-        lateinit var instance: App
-    }
-
-}
+@HiltAndroidApp
+open class App : Application()
