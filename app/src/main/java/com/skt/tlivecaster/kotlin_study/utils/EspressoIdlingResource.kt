@@ -1,4 +1,4 @@
-package com.skt.tlivecaster.kotlin_study
+package com.skt.tlivecaster.kotlin_study.utils
 
 import androidx.test.espresso.IdlingResource
 

@@ -4,10 +4,10 @@ import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.skt.tlivecaster.kotlin_study.RegexUtils.isValidEmail
+import com.skt.tlivecaster.kotlin_study.utils.RegexUtils.isValidEmail
 import com.skt.tlivecaster.kotlin_study.ui.base.BaseViewModel
 import com.skt.tlivecaster.kotlin_study.utils.SingleEvent
-import com.skt.tlivecaster.kotlin_study.wrapEspressoIdlingResource
+import com.skt.tlivecaster.kotlin_study.utils.wrapEspressoIdlingResource
 import com.skt.tlivecaster.kotlin_study.data.DataRepository
 import com.skt.tlivecaster.kotlin_study.data.Resource
 import com.skt.tlivecaster.kotlin_study.data.dto.login.LoginRequest

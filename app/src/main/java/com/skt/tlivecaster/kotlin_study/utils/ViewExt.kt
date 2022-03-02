@@ -17,7 +17,6 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import com.google.android.material.snackbar.Snackbar
-import com.skt.tlivecaster.kotlin_study.EspressoIdlingResource
 import com.skt.tlivecaster.kotlin_study.R
 import com.squareup.picasso.Picasso
 
